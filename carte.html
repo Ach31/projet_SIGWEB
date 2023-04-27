@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPRisque</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="menu_deroulant.css">
+	<style type="text/css">
+
+
+		body {
+		  background-image: url("fond_ecran.jpg");
+		  background-repeat: no-repeat;
+		  background-size: cover;
+
+		}
+		
+		td {
+		  text-align: center;
+		}
+		table{
+			margin-left: 92px;
+			margin-top: 60px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<nav>
+  <ul>
+  	<li>
+  		<a href="site.html"><img src="./logo_termine.jpg" alt="logo" height="50" width="100"></a>
+  	</li>
+    
+    <li class="menu-deroulant">
+      <a href="risque.html">RISQUES</a>
+      <ul class="sous-menu">
+        <li><a href="#">Risques Naturels</a></li>
+        <li><a href="#">Risques Technologiques</a></li>
+      </ul>
+    </li>
+    <li><a href="carte.html">CARTE</a></li>
+    <li class="menu-deroulant"><a href="donnees.html">DONNEES</a>
+    	<ul class="sous-menu">
+        	<li><a href="#">Importer</a></li>
+       		<li><a href="#">Exporter</a></li>
+       	</ul>	
+    </li>
+      	
+  </ul>
+</nav>
+
+
+<table border="0">
+	<form name="formualaire" method="GET">
+		<tr>
+			<td>
+				Sélection des risques:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<center>
+					<select multiple name="risques" size="8">
+						<optgroup label="Risques Naturels">
+							<option value="Avalanche">Avalanche</option>
+							<option value="Cyclone">Cyclone</option>
+							<option value="ErupVolc">Eruption Volcanique</option>
+							<option value="FeuForet">Feu de foret</option>
+							<option value="Inondation">Inondation</option>
+							<option value="MvtTerrain">Mouvement de terrain</option>
+							<option value="Seisme">Séisme</option>
+							<option value="Tempete">Tempete</option>
+						</optgroup>
+						<optgroup label="Risques Technologiques">
+							<option value="Centrale">Centrale nucleaire</option>
+							<option value="Barrage">Rupture de barrage</option>
+							<option value="Seveso">Site Seveso </option>
+							<option value="Mine">Risque minier</option>
+						</optgroup>
+					</select>
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Itinéraire:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="A" placeholder="Départ">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="B" placeholder="Arrivée">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="reset" value="Rénitialiser">
+				<input type="submit" value="Afficher">
+			</td>
+		</tr>
+
+	</form>
+
+
+
+</table>
+
+</body>
+</html>

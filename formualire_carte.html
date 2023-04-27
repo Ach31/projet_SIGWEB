@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire pour la carte</title>
+</head>  
+<body>
+
+<table border="0">
+	<form name="formualaire" method="GET">
+		<tr>
+			<td>
+				Sélection des risques:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<center>
+					<select multiple name="risques" size="8">
+						<optgroup label="Risques Naturels">
+							<option value="Avalanche">Avalanche</option>
+							<option value="Cyclone">Cyclone</option>
+							<option value="ErupVolc">Eruption Volcanique</option>
+							<option value="FeuForet">Feu de foret</option>
+							<option value="Inondation">Inondation</option>
+							<option value="MvtTerrain">Mouvement de terrain</option>
+							<option value="Seisme">Séisme</option>
+							<option value="Tempete">Tempete</option>
+						</optgroup>
+						<optgroup label="Risques Technologiques">
+							<option value="Centrale">Centrale nucleaire</option>
+							<option value="Barrage">Rupture de barrage</option>
+							<option value="Seveso">Site Seveso </option>
+							<option value="Mine">Risque minier</option>
+						</optgroup>
+					</select>
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Itinéraire:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="A" placeholder="Départ">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="B" placeholder="Arrivée">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="reset" value="Rénitialiser">
+				<input type="submit" value="Afficher">
+			</td>
+		</tr>
+
+	</form>
+
+
+
+</table>
+
+</body>
+</html>
